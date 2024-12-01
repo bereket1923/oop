@@ -2,61 +2,22 @@ CS203 Object Oriented Programming:
 The CS203 Object-Oriented Programming course provides a comprehensive foundation in Java programming, covering essential concepts such as defining classes with attributes, methods, encapsulation, and constructors. It explores inheritance and polymorphism for code reuse and dynamic behavior, along with interfaces and abstract classes to establish contracts and blueprints. I learned to override fundamental methods of the Object class, including toString, equals, and hashCode, and effectively utilize the Java Collection Framework to manage data structures like lists, sets, and maps. The course also introduced recursion for solving complex problems through self-referential solutions and exception handling to manage errors gracefully using try-catch blocks and finally. These topics have equipped me with robust skills for object-oriented software development.
 Here’s a detailed summary of the topics you learned in CS203 Object-Oriented Programming:
 1. Define Your Own Classes
-This foundational topic covers:
-•	Class definition: Understanding how to create a class using the class keyword in Java.
-•	Attributes and methods: Using instance variables and defining behavior through methods.
-•	Encapsulation: Using access modifiers (private, public) and getter/setter methods to restrict direct access to class attributes.
-•	Constructors: Creating special methods to initialize objects with specific states.
+This foundational topic focuses on understanding how to create and work with classes in Java. It involves defining classes using the class keyword and adding attributes (instance variables) and methods to describe the behavior and state of objects. Encapsulation is introduced, where access modifiers like private and public restrict direct access to attributes, and getter/setter methods control data flow. Constructors, special methods used to initialize objects with specific states, play a vital role in setting up objects efficiently.
 
 2. Inheritance and Polymorphism
-•	Inheritance: Learning how a subclass can inherit properties and methods from a parent class, promoting code reuse.
-o	Syntax: class Subclass extends Parent Class.
-o	Super keyword: Accessing parent class methods or constructors.
-•	Polymorphism: Enabling a single action to behave differently based on the object.
-o	Method overriding: Subclass provides specific implementation for a method declared in a parent class.
-o	Dynamic method dispatch: At runtime, the method invoked is based on the object type, not the reference.
+Inheritance allows a subclass to inherit properties and methods from a parent class, promoting code reuse and hierarchical relationships. It uses the extends keyword, and the super keyword is used to call parent class methods or constructors. Polymorphism enables a single action to behave differently based on the object type. This is achieved through method overriding, where a subclass provides its implementation of a parent class method, and dynamic method dispatch, where the method executed at runtime depends on the object's type rather than the reference used.
 
 3. Interfaces and Abstract Classes
-•	Interfaces:
-o	Define a contract for classes without implementing methods.
-o	Use the interface keyword and implement it using implements.
-o	Supports multiple inheritances through interfaces.
-•	Abstract Classes:
-o	Acts as a partial blueprint.
-o	Can have both abstract methods (without a body) and concrete methods (with a body).
-o	Cannot be instantiated directly.
+Interfaces define a contract for classes, specifying methods without implementing them. They are declared using the interface keyword and implemented by classes using implements. Interfaces support multiple inheritances, making them highly versatile. Abstract classes, on the other hand, act as partial blueprints and can have both abstract methods (without a body) and concrete methods (with a body). Abstract classes cannot be instantiated directly but are extended by subclasses to provide specific implementations.
 
-4. The ‘Object’ Class
-•	Every class in Java implicitly or explicitly extends the Object class.
-•	Commonly overridden methods include:
-o	toString(): Customizing object-to-string conversion.
-o	equals(): Comparing object contents for equality.
-o	hashCode(): Generating hash values for objects.
+4. The Object Class
+Every Java class implicitly or explicitly extends the Object class, which is the root of the Java class hierarchy. Commonly overridden methods include toString() for customizing object-to-string conversion, equals() for comparing object contents, and hashCode() for generating unique hash values for objects. These methods are crucial for enabling consistent behavior in custom classes, especially when working with collections or frameworks.
 
 5. Java Collection Framework
-•	Collections: Framework for storing and manipulating groups of objects.
-•	Core interfaces:
-o	List: Ordered collections (e.g., ArrayList, LinkedList).
-o	Set: Unique elements (e.g., HashSet, TreeSet).
-o	Map: Key-value pairs (e.g., HashMap, TreeMap).
-•	Features:
-o	Sorting and searching utilities (Collections.sort, binary search).
-o	Iterators for traversing collections.
+The Java Collection Framework provides a comprehensive set of interfaces and classes for storing and manipulating groups of objects. Core interfaces include List for ordered collections (e.g., ArrayList, LinkedList), Set for unique elements (e.g., HashSet, TreeSet), and Map for key-value pairs (e.g., HashMap, TreeMap). It offers utilities for sorting and searching, such as Collections.sort and binary search, and allows iteration through collections using iterators, enhancing the efficiency of data manipulation tasks.
 
 6. Recursion
-•	Solving problems where a function calls itself with smaller subproblems.
-•	Key components:
-o	Base case: The condition for stopping recursion.
-o	Recursive case: Defines how the problem is reduced.
-•	Common applications:
-o	Factorial, Fibonacci series, Tower of Hanoi, and binary tree traversal.
+Recursion involves solving problems by having a function call itself with smaller subproblems. It is defined by a base case, which stops the recursion, and a recursive case, which reduces the problem. Recursion is commonly applied in tasks such as calculating factorials, generating Fibonacci series, solving the Tower of Hanoi problem, and traversing binary trees. Mastery of recursion enables tackling complex problems elegantly by breaking them into simpler parts.
 
 7. Exception Handling
-•	Purpose: Managing errors gracefully to avoid program crashes.
-•	Mechanism:
-o	Try-catch: Encapsulating risky code in a try block and catching exceptions in a catch block.
-o	Throw: Explicitly throwing an exception.
-o	Finally: Code that always executes regardless of an exception.
-•	Types of exceptions:
-o	Checked exceptions: Caught or declared (e.g., IOException).
-o	Unchecked exceptions: Runtime errors (e.g., ArithmeticException).
+Exception handling ensures that errors in programs are managed gracefully to prevent crashes. Using try-catch blocks, risky code is encapsulated within a try block, and exceptions are caught in a catch block. The throw keyword is used to explicitly raise exceptions, while the finally block guarantees the execution of essential code regardless of exceptions. Java categorizes exceptions into checked exceptions, which must be caught or declared (e.g., IOException), and unchecked exceptions, which are runtime errors (e.g., ArithmeticException). This mechanism enhances program robustness and reliability.
